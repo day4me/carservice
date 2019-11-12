@@ -1,0 +1,111 @@
+{% extends "mainpage/base.html" %}
+{% block content %}
+
+<div class="page-content">
+<div class="containerPhoto">
+<div class="ramka">
+    <div class="container" id="container-in-ramka">
+        <div class="row text-in-the-image">
+            <div class="col-5"><h3>СТО Salmon Alarmist</h3> </div>  
+            <div class="col-7"></div> 
+        </div>
+    </div>
+
+</div>
+</div>
+<div>
+<H4>ПОСЛУГИ СТО</H4>
+<div class="separator"></div>
+    <p class="slogan">Наші майстри зроблять все необхідне</p>
+<!--HERE MUST BE GRID-->
+</div>
+<div class="container section1 " id="icons-and-text">
+    <div class="row icons">
+        <div class="col-sm service-icons collapsible" id="icon-1"><i class="fal fa-laptop fa-3x"></i></div>
+        <div class="col-sm service-icons collapsible" id="icon-2"><i class="fal fa-oil-can fa-3x"></i></div>
+        <div class="col-sm service-icons collapsible" id="icon-3"><i class="fal fa-microchip fa-3x"></i></div>
+        <div class="col-sm service-icons collapsible" id="icon-4"><i class="fal fa-tire fa-3x"></i></div>
+    </div>
+    <div class="row icon-signature" id="service-name">
+        <h5 class="col-sm service-signature" id="sign-1">Діагностика</h5>
+        <h5 class="col-sm service-signature" id="sign-2">Заміна масла</h5>
+        <h5 class="col-sm service-signature" id="sign-3">Чіп тюнінг</h5>
+        <h5 class="col-sm service-signature" id="sign-4">Шиномонтаж</h5>
+    </div>
+    <div class="row icon-text">
+        <p class="col-sm service-text" id="text-1">Взнаємо все, про що думає ваш автомобіль</p>
+        <p class="col-sm service-text" id="text-2">Своєчасне обслуговування - гарант надійної роботи</p>
+        <p class="col-sm service-text" id="text-3">Зробимо ваш мотор потужнішим</p>
+        <p class="col-sm service-text" id="text-4">Гарне щеплення - гарній експіріенс</p>
+    </div>
+
+</div class="container">
+<div class="container">
+    <div class="content" id="content-0">
+        <p>Своєчасна діагностика дозволяє оперативно виявити можливі несправності на початковому етапі. </p>
+    </div>
+    <div class="content" id="content-1">
+        <p>Не бійтеся міняти масло занадто часто. У паливі, повітрі завжди присутня багато пилу і бруду, які призводять до швидкого засмічення фільтрів і самої змащуючої речовини.</p>
+    </div>
+    <div class="content" id="content-2">
+        <p>Чіп-тюнінг за допомогою спеціальних програм - контролерів дозволяє змінити закладені заводські настройки, щоб поліпшити характеристики двигуна і повністю розкрити його потенціал.</p>
+    </div>
+    <div class="content" id="content-3">
+        <p>Наші майстри виконують шиномонтаж шин будь-якого типорозміру, в тому числі низькопрофільних шин, шин Run-Flat, системи PAX і броньованих коліс.</p>
+    </div>
+    <div class="content" id="content-4">
+        <p>5555555 dolor sit amet consectetur adipisicing elit. Maxime nemo ea odio deserunt, id quis temporibus praesentium natus delectus sed sint ab dolore, molestiae modi quibusdam fugit dicta velit tempora.</p>
+    </div>
+</div>
+<div class="container" id="why-us-container">
+<div class="row">
+    <div class="col-5" >
+    <h3 id="why-us-left">
+            Чому нас обирають
+    </h3>
+</div>
+    <div class="col-2" id="why-us-delimeter">
+        <div class="container" style="height: 100%">
+            <div class="row" style="height: 100%">
+                <div class="col-6" class="divider-cols" id="vert-div-left"></div>
+                <div class="col-6" class="divider-cols" id="vert-div-right"></div>
+            </div>
+        </div>
+    </div>
+    <div class="col-5">
+        <ul id="why-us-right">
+            <li>
+                Робимо <div class="text-impressive">швидко!</div> 
+            </li>
+            <li>
+                Робимо <div class="text-impressive">дешево!</div> 
+            </li>
+            <li>
+                Робимо <div class="text-impressive">круто!</div> 
+            </li>
+        </ul>
+    </div>
+</div>
+</div>
+<div class="break"></div>
+<div class="container">
+<div class="row">
+    <div class="col" id="contact-us-header">
+        <a href="{% url 'request-create' %}" class="brk-btn">
+            Оформити заявку
+          </a>
+    </div>
+</div>
+<div class="row">
+    <div class="col">
+
+    </div>
+</div>
+</div>
+</div>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
+ {% endblock content %}

@@ -1,0 +1,37 @@
+<html>
+  <body>
+    <h1>Автосервіс - Salmon Alarmist</h1>
+    <p>
+      Номер замовлення: <b>{{ request.id }}</b> <br>
+      <span class="secondary">
+        {{ request.date_end }}
+      </span>
+    </p>
+    <h3>Замовник</h3>
+    <p>
+      {{ request.author.first_name }} {{ request.author.last_name }}<br>
+      {{ request.author.info.phone_number }} <br>
+    </p>
+    <h3>Замовлена послуга</h3>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Послуга</th>
+          <th>Вартість(грн)</th>
+          <th>Дата початку</th>
+          <th>Дата закінчення</th>
+        </tr>
+      </thead>
+      <tbody>
+            <td>{{ request.service.name }}</td>
+            <td>{{ request.service.price }}</td>
+            <td>{{ request.date_begin }}</td>
+            <td>{{ request.date_end }}</td>
+        <tr class="total">
+          <td colspan="3">Всього(грн):</td>
+          <td class="num">{{ request.service.price }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
