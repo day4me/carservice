@@ -10,7 +10,7 @@ django-bootstrap4==0.0.8
 django-crispy-forms==1.7.2
 django-fontawesome-5==1.0.16
 django-phonenumber-field==3.0.1
-djangorestframework==3.9.4
+djangorestframework==3.11.2
 html5lib==1.0.1
 phonenumbers==8.10.12
 Pillow==6.0.0
